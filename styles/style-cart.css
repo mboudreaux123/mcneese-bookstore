@@ -1,0 +1,181 @@
+
+.main-content {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.store-control {
+  color: var(--color-card-fg);
+  background-color: var(--color-card-bg);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: .5rem;
+  width: 100%;
+  max-width: var(--element-max-width);
+  border-radius: 12px;
+}
+
+.store-control-right-sub {
+  display: flex;
+  flex-direction: row;
+}
+
+.store-right-item {
+  padding: 0 1rem;
+}
+
+.store-control-prices {
+  font-size: .8em;
+}
+
+.checkout-button {
+  text-align: center;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  padding: .5rem;
+  margin: 0 .5rem;
+  border-radius: 8px;
+  transition: background-color 100ms linear;
+  border: 0;
+  cursor: pointer;
+}
+
+.page-button {
+  padding: .2rem;
+  color: var(--color-fg);
+  background-color: var(--color-bg-alt);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.page-button:hover {
+  background-color: var(--color-bg);
+}
+
+.store-items {
+  max-width: var(--element-max-width);
+  width: 80vw;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  margin: .5rem 1rem;
+}
+
+.card {
+  font-size: .85em;
+  width: 90%;
+  height: 12rem;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--color-card-fg);
+  background-color: var(--color-card-bg);
+  transition: transform .9s;
+  transition: box-shadow .3s;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-img-container {
+  width: 12rem;
+  height: 12rem;
+  background-size: contain;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.card img{
+  max-width: 100%;
+  height: 100%;
+  object-fit:cover;
+  display: block; /* remove extra space below image */
+  cursor: pointer;
+}
+
+.card-details {
+  margin: .8rem;
+  cursor: pointer;
+}
+
+.item-img {
+  border-radius: 10px 0 0 10px;
+}
+
+.book-price {
+  color: var(--color-price);
+}
+
+.book-rating {
+  font-size: 1.4em;
+  color: var(--color-rating);
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.card-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-cart-button {
+  margin: .4rem;
+  text-align: center;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  padding: .5rem;
+  margin: .5rem .5rem;
+  border-radius: 8px;
+  transition: background-color 100ms linear;
+  border: 0;
+  cursor: pointer;
+}
+
+.card-remove-button {
+  margin: .4rem;
+  text-align: center;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  padding: .5rem;
+  margin: .5rem .5rem;
+  border-radius: 8px;
+  transition: background-color 100ms linear;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--color-fg);
+  float: left;
+  padding: .3rem .6rem;
+  margin: 0 .3rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 100ms linear;
+}
+
+.pagination a.active {
+  background-color: var(--color-fg);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: var(--color-bg);
+  transition: background-color 100ms linear;
+}

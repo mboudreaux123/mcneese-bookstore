@@ -1,0 +1,53 @@
+/* Define colors to be used */
+:root {
+    --color-fg: hsl(223, 82%, 56%);
+    --color-fg-alt: hsl(223, 82%, 56%);
+    --color-bg: hsl(222, 100%, 94%);
+    --color-bg-alt: hsl(0, 0%, 100%);
+    --color-border: rgba(0, 0, 0, 0.1);
+  
+    --color-navbar-fg: var(--color-fg-alt);
+    --color-navbar-bg: var(--color-bg-alt);
+    --color-navbar-active-fg: hsl(223, 82%, 82%);
+    --color-navbar-active-bg: hsl(223, 100%, 91%);
+    --color-navbar-border: var(--color-border);
+    --color-navbar-search: var(--color-bg);
+  
+    --color-price: green;
+    --color-rating: rgb(177, 150, 0);
+    --color-price-background: hsl(223, 100%, 91%); 
+  
+    --color-card-fg: var(--color-fg-alt);
+    --color-card-bg: var(--color-bg-alt);
+    --color-card-border: var(--color-border);
+
+    --element-max-width: 73rem;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: var(--color-fg-alt);
+    background-color: var(--color-bg);
+    height:100vh;
+    display:flex; 
+    flex-direction:column;
+}
+
+.selector {
+    text-align: center;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+    padding: .5rem;
+    margin: 0 .5rem;
+    border-radius: 8px;
+    transition: background-color 100ms linear;
+    border: 0;
+    cursor: pointer;
+}

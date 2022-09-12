@@ -1,0 +1,80 @@
+/* https://www.freecodecamp.org/news/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783/ */
+.footer {
+  position: relative;
+  padding: .6rem;
+  background-color: rgb(255, 255, 255);
+  color: var(--color-navbar-fg);
+  border: 4px #222222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.footer-elements {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: calc(var(--element-max-width) + 6rem);
+  margin: 0 auto;
+}
+
+.footer-title {
+  color: var(--color-navbar-fg);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: .2rem;
+}
+
+.footer-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: flex;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-navbar-fg);
+  padding: .4rem;
+  margin: 0 .5rem;
+  border-radius: 8px;
+  transition: background-color 100ms linear;
+}
+
+.footer-search {
+  width: 20rem;
+  max-width: 20rem;
+  padding: .4rem;
+  margin: 0 1rem;
+  background-color: var(--color-navbar-search);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.footer-links a:hover {
+  background-color: var(--color-navbar-active-bg);
+  transition: background-color 100ms linear;
+}
+
+.footer-menu {
+  font-size: 30px;
+  margin: 0 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .footer-elements {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+}
